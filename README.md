@@ -53,22 +53,6 @@ Existing interventions fail because:
 
 ---
 
-## Design System & Government-Portal Light Theme Tokens
-
-All color, spacing, radius, and typography tokens are centralized in [`src/lib/theme.ts`](file:///c:/Users/amitg/Desktop/green%20tech/src/lib/theme.ts) and [`src/app/globals.css`](file:///c:/Users/amitg/Desktop/green%20tech/src/app/globals.css):
-- **Page Background:** `#F5F7FA` (Calm government portal light gray)
-- **Cards & Panels:** `#FFFFFF` with `1px solid #D9DEE5` borders and `8px` (`rounded-lg`) radius
-- **Primary Header & Actions:** `#1F3A5F` (Portal Navy), Hover `#162C49`
-- **Clean Positive States:** `#2E7D32` (Forest Green)
-- **Risk Colors:**
-  - **Critical ($\ge 75$):** `#C62828` (Fill: `rgba(198, 40, 40, 0.35)`)
-  - **High ($51–74$):** `#E65100` (Fill: `rgba(230, 81, 0, 0.30)`)
-  - **Moderate ($26–50$):** `#F9A825` (Fill: `rgba(249, 168, 37, 0.25)`)
-  - **Low ($0–25$):** `#2E7D32` (Fill: `rgba(46, 125, 50, 0.20)`)
-- **Tricolor Header Accent:** Saffron (`#FF9933`), White (`#FFFFFF`), Green (`#138808`)
-
----
-
 ## Quickstart
 
 ### Prerequisites
