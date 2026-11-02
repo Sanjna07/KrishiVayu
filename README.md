@@ -1,12 +1,8 @@
 # KrishiVayu (कृषिवायु) — Burn Alert to Buyer Match & Residue Market
 
-> **One-liner:** Detect crop-residue fires in Punjab/Haryana, rank districts by risk to Delhi air quality, match hotspots to clean alternatives, and connect farmers with industrial residue off-takers through a privacy-first, trilingual paddy straw marketplace.
->
-> **Design Theme:** Official Government-Portal Light Style (`#F5F7FA` page, `#FFFFFF` cards, `#D9DEE5` borders, `#1F3A5F` Navy header, and authentic CPCB/ISRO risk palettes).
->
-> **Track:** Green Tech / Sustainable Development · Civic Tech MVP
->
-> **Live Deployment:** [https://krishivayu-dw9o.vercel.app/](https://krishivayu-dw9o.vercel.app/)
+Detect crop-residue fires in Punjab/Haryana, rank districts by risk to Delhi air quality, match hotspots to clean alternatives, and connect farmers with industrial residue off-takers through a privacy-first, trilingual paddy straw marketplace.
+
+ **Live Deployment:** [https://krishivayu-dw9o.vercel.app/](https://krishivayu-dw9o.vercel.app/)
 
 ---
 
