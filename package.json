@@ -1,0 +1,33 @@
+{
+  "name": "krishivayu",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Manan Goel <147349359+Manan-Goel@users.noreply.github.com>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "npx --yes tsx tests/domain.test.ts && npx --yes tsx tests/weather.test.ts && npx --yes tsx tests/alternatives.test.ts && npx --yes tsx tests/resilience.test.ts && npx --yes tsx tests/market.test.ts && npx --yes tsx tests/repo.test.ts && npx --yes tsx tests/api-matrix.test.ts && npx --yes tsx tests/lifecycle.test.ts && npx --yes tsx tests/whatsapp-integration.test.ts && npx --yes tsx tests/demand-signal.test.ts && npx --yes tsx tests/csv.test.ts"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.14.0",
+    "maplibre-gl": "^5.24.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

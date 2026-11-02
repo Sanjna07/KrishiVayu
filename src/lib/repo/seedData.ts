@@ -1,0 +1,133 @@
+import type { Listing, Offer } from '@/types/market';
+import { hashEditToken } from '@/lib/market';
+
+// Pre-hashed tokens for demo listings
+// Token 1: demo-farmer-token-sangrur-01
+// Token 2: demo-farmer-token-bathinda-02
+// Token 3: demo-farmer-token-ludhiana-03
+// Token 4: demo-farmer-token-tarn-04
+
+export const initialDemoListings: Listing[] = [
+  {
+    id: 'demo_list_01',
+    village: 'Bhawanigarh',
+    district: 'Sangrur',
+    state: 'Punjab',
+    quantityQuintals: 250,
+    form: 'baled',
+    availability: {
+      startDate: '2026-11-01',
+      endDate: '2026-11-12',
+    },
+    askingPricePerQuintal: 210,
+    phone: '9876500001',
+    editTokenHash: hashEditToken('demo-farmer-token-sangrur-01'),
+    status: 'offered',
+    isDemo: true,
+    createdAt: '2026-10-31T06:00:00.000Z',
+    updatedAt: '2026-10-31T08:30:00.000Z',
+  },
+  {
+    id: 'demo_list_02',
+    village: 'Rampura Phul',
+    district: 'Bathinda',
+    state: 'Punjab',
+    quantityQuintals: 400,
+    form: 'loose',
+    availability: {
+      startDate: '2026-11-02',
+      endDate: '2026-11-15',
+    },
+    askingPricePerQuintal: 195,
+    phone: '9876500002',
+    editTokenHash: hashEditToken('demo-farmer-token-bathinda-02'),
+    status: 'listed',
+    isDemo: true,
+    createdAt: '2026-10-31T10:15:00.000Z',
+    updatedAt: '2026-10-31T10:15:00.000Z',
+  },
+  {
+    id: 'demo_list_03',
+    village: 'Samrala',
+    district: 'Ludhiana',
+    state: 'Punjab',
+    quantityQuintals: 180,
+    form: 'baled',
+    availability: {
+      startDate: '2026-11-01',
+      endDate: '2026-11-08',
+    },
+    askingPricePerQuintal: 220,
+    phone: '9876500003',
+    editTokenHash: hashEditToken('demo-farmer-token-ludhiana-03'),
+    status: 'accepted',
+    isDemo: true,
+    acceptedOfferId: 'demo_off_03',
+    createdAt: '2026-10-30T14:00:00.000Z',
+    updatedAt: '2026-10-31T09:00:00.000Z',
+  },
+  {
+    id: 'demo_list_04',
+    village: 'Patti',
+    district: 'Tarn Taran',
+    state: 'Punjab',
+    quantityQuintals: 320,
+    form: 'loose',
+    availability: {
+      startDate: '2026-11-03',
+      endDate: '2026-11-18',
+    },
+    askingPricePerQuintal: 185,
+    phone: '9876500004',
+    editTokenHash: hashEditToken('demo-farmer-token-tarn-04'),
+    status: 'listed',
+    isDemo: true,
+    createdAt: '2026-10-31T12:00:00.000Z',
+    updatedAt: '2026-10-31T12:00:00.000Z',
+  },
+];
+
+export const initialDemoOffers: Offer[] = [
+  {
+    id: 'demo_off_01',
+    listingId: 'demo_list_01',
+    buyerId: 'demo_buyer_pellet_01',
+    buyerName: 'Malwa Bio-Pellet Unit (Demo)',
+    buyerType: 'pellet_unit',
+    buyerContact: '98111-DEMO1',
+    pricePerQuintal: 205,
+    proposedPickupDate: '2026-11-05',
+    shortNote: 'Direct self-loading trailer. Payment on weighbridge slip.',
+    status: 'pending',
+    isDemo: true,
+    createdAt: '2026-10-31T07:15:00.000Z',
+  },
+  {
+    id: 'demo_off_02',
+    listingId: 'demo_list_01',
+    buyerId: 'demo_buyer_cbg_02',
+    buyerName: 'Doaba Green Gas Collector (Demo)',
+    buyerType: 'cbg_plant',
+    buyerContact: '98111-DEMO2',
+    pricePerQuintal: 215,
+    proposedPickupDate: '2026-11-04',
+    shortNote: 'Can arrange baler support if loose residue remains.',
+    status: 'pending',
+    isDemo: true,
+    createdAt: '2026-10-31T08:30:00.000Z',
+  },
+  {
+    id: 'demo_off_03',
+    listingId: 'demo_list_03',
+    buyerId: 'demo_buyer_agg_03',
+    buyerName: 'Sutlej Biomass Aggregators (Demo)',
+    buyerType: 'aggregator',
+    buyerContact: '98111-DEMO3',
+    pricePerQuintal: 220,
+    proposedPickupDate: '2026-11-03',
+    shortNote: 'Ready for immediate dispatch with twin tractor trolleys.',
+    status: 'accepted',
+    isDemo: true,
+    createdAt: '2026-10-30T16:00:00.000Z',
+  },
+];
